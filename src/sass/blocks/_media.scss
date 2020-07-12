@@ -1,0 +1,113 @@
+@media (max-width: 991px) {
+    .container {
+        padding: 0 30px;
+    }
+    .header {
+        &__call {
+            display: block;
+            
+        }
+        
+    }
+    .xs-small {
+        display: none;
+    }
+    .xs-big {
+        display: block;
+    }
+        
+}
+@media (max-width: 767px) {
+    .header {
+        &__official {
+            text-align: right;
+            span {
+                display: inline-block;
+            }
+            
+        }
+        &__call {
+            margin-top: 15px;
+        }
+        
+    }
+    .xs-big {
+        display: none;
+    }
+    .xs-small {
+        display: block;
+        text-align: center;
+    }
+    .promo {
+        &__wrapper {
+            align-items: center;
+        }
+        &__header {
+            font-size: 37px;
+        }
+        &__subheader {
+            font-size: 20px;
+        }
+    }
+    .advantages {
+        &__wrapper {
+            flex-direction: column;
+            margin-top: 40px;
+        }
+        &__item {
+            width: 75%;
+            margin-bottom: 40px;
+        }
+        &__header {
+            margin-top: 14px;
+        }
+        &__descr {
+            margin-top: 19px;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+        &__official {
+            text-align: center;
+            order: 2;
+            margin-top: 15px;
+        }
+        &__logo {
+            order: 0;
+        }
+        &__call {
+            order: 1;
+        }
+        
+    }
+    .xs-small {
+        display: none;
+    }
+    .xs-big {
+        display: block;
+    }
+    .promo {
+        &__header {
+            font-size: 29px;
+            text-align: center;
+        }
+        &__subheader {
+            font-size: 19px;
+            text-align: center;
+        }
+        &__icons {
+            justify-content: center;
+        }
+        &__icon {
+            font-size: 12px;
+            width: 95px;
+        }
+    }
+    .button_main {
+        width: 250px;
+    }
+}
