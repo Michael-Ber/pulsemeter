@@ -34,6 +34,15 @@
             font-size: 32px;
         }
     }
+    .slider {
+        &__inner {
+            width: 500px;
+        }
+        &__img {
+            width: 500px;
+        }
+    }
+    
         
 }
 @media (max-width: 767px) {
@@ -91,6 +100,14 @@
         .section-header_left {
             font-size: 24px;
             text-align: left;
+        }
+    }
+    .slider {
+        &__inner {
+            width: 380px;
+        }
+        &__img {
+            width: 380px;
         }
     }
 }
@@ -157,6 +174,21 @@
         }
         .feed-form {
             width: 250px;
+        }
+    }
+    .slider {
+        &__inner {
+            width: 230px;
+        }
+        &__img {
+            width: 230px;
+        }
+        .slick-prev {
+            right: -24px;
+            
+        }
+        .slick-next {
+            left: -21px;
         }
     }
 }

@@ -47,6 +47,7 @@ $(document).ready(function(){
         nextArrow: '<button type="button" class="slick-prev"><img src="img/icons/right.png" alt="right" id="right"></button>',
         prevArrow: '<button type="button" class="slick-next"><img src="img/icons/left.png" alt="left" id="left"></button>',
         speed: 1000,
+        mobileFirst: true,
 
   });
 });
