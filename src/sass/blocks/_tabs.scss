@@ -1,5 +1,4 @@
 .catalog {
-    min-height: 1203px;
     padding-bottom: 103px;
     &__tabs {
         display: flex;
@@ -22,6 +21,8 @@
         margin-left: 5px;
         margin-right: 5px;
         transform: skew(-25deg);
+        transition: .5s all;
+        cursor: pointer;
         div {
             transform: skew(25deg);
         }
@@ -38,9 +39,18 @@
         }
     }
     &__content {
-        margin-top: 59px;
-        display: flex;
+        transition: .5s opacity;
         flex-wrap: wrap;
+        display: none;
+        margin-top: 59px;
+        &-wrapper {
+            overflow-y: hidden;
+        }
+        
+        &_active {
+            display: flex;
+        }
+        
     }
     &-card {
         width: 300px;

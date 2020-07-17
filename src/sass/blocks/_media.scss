@@ -9,9 +9,9 @@
     
 }
 @media (max-width: 991px) {
-    .container {
-        padding: 0 30px;
-    }
+    // .container {
+    //     padding: 0 30px;
+    // }
     
     .xs-small {
         display: none;
@@ -32,9 +32,18 @@
     .consultation {
         .section-header_left {
             font-size: 32px;
+            padding-left: 20px;
+        }
+        &__descr {
+            padding-left: 20px;
+        }
+        .feed-form {
+            padding-left: 20px;
         }
     }
     .slider {
+        padding-bottom: 0;
+        min-height: 605px;
         &__inner {
             width: 500px;
         }
@@ -43,6 +52,15 @@
         }
     }
     
+    .catalog {
+        
+        &__content {
+            justify-content: center;
+        }
+        &__tabs {
+            padding: 0 20px;
+        }
+    }
         
 }
 @media (max-width: 767px) {
@@ -55,10 +73,8 @@
             
         }
         &__call {
-            margin-top: 15px;
-            
+            margin-top: 15px; 
         }
-        
     }
     .xs-big {
         display: none;
@@ -110,6 +126,7 @@
             width: 380px;
         }
     }
+    
 }
 
 @media (max-width: 575px) {
@@ -164,6 +181,7 @@
             line-height: 39px;
             text-align: center;
             margin: 0 auto;
+            padding: 0 20px;
         }
         .not-active {
             display: none;
@@ -171,14 +189,20 @@
         &__descr {
             margin: 56px auto 0 auto;
             text-align: center;
+            padding: 0 20px;
+            font-size: 18px;
         }
         .feed-form {
             width: 250px;
         }
     }
     .slider {
+        min-height: 366px;
         &__inner {
             width: 230px;
+            #left, #right {
+                width: 40%;
+            }
         }
         &__img {
             width: 230px;
@@ -189,6 +213,15 @@
         }
         .slick-next {
             left: -21px;
+        }
+    }
+    .catalog {
+        &__tabs {
+            flex-direction: column;
+            margin-top: 34px;
+        }
+        &__tab {
+            margin-bottom: 10px;
         }
     }
 }
