@@ -1,5 +1,5 @@
 @import "base/variables";
-
+@import "base/keyframes";
 
 * {
     font-family: 'Museo Sans';
@@ -22,4 +22,5 @@
 @import "blocks/_tabs.scss";
 @import "blocks/_clients.scss";
 @import "blocks/_footer.scss";
+@import "blocks/_modal.scss";
 @import "blocks/_media.scss";

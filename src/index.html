@@ -23,12 +23,12 @@
                 </div>
                 <div class="header__call xs-big">
                     <a href="tel:+74999228974" class="header__tel">+7 (499) 922-89-74</a>
-                    <button class="button">заказать звонок</button>
+                    <button data-modal="consultation" class="button">заказать звонок</button>
                 </div>
             </header>
             <div class="header__call xs-small">
                 <a href="tel:+74999228974" class="header__tel">+7 (499) 922-89-74</a>
-                <button class="button">заказать звонок</button>
+                <button data-modal="consultation" class="button">заказать звонок</button>
             </div>
             <div class="promo__wrapper">
                 <h1 class="promo__header">
@@ -46,7 +46,7 @@
                         на все вопросы</div>
                 </div>
                 
-                <button class="button button_main">заказать кОНСУЛЬТАЦИЮ</button>
+                <button data-modal="consultation"  class="button button_main">заказать кОНСУЛЬТАЦИЮ</button>
                 <div class="promo__link">
                     или
                     <a href="#">ПЕРЕЙТИ В КАТАЛОГ</a>
@@ -167,7 +167,7 @@
                                 <div class="catalog-card__price-new">4 500 руб.</div>
                             </div>
                             <div class="catalog-card__btn">
-                                <button class="button button_mini">КУПИТЬ</button>
+                                <button data-modal="order" class="button button_mini">КУПИТЬ</button>
                             </div>
                         </div>
                     </div>
@@ -194,7 +194,7 @@
                                 <div class="catalog-card__price-new">6 641 руб.</div>
                             </div>
                             <div class="catalog-card__btn">
-                                <button class="button button_mini">КУПИТЬ</button>
+                                <button data-modal="order" class="button button_mini">КУПИТЬ</button>
                             </div>
                         </div>
                     </div>
@@ -221,7 +221,7 @@
                                 <div class="catalog-card__price-new">7 021 руб.</div>
                             </div>
                             <div class="catalog-card__btn">
-                                <button class="button button_mini">КУПИТЬ</button>
+                                <button data-modal="order" class="button button_mini">КУПИТЬ</button>
                             </div>
                         </div>
                     </div>
@@ -248,7 +248,7 @@
                                 <div class="catalog-card__price-new">4 500 руб.</div>
                             </div>
                             <div class="catalog-card__btn">
-                                <button class="button button_mini">КУПИТЬ</button>
+                                <button data-modal="order" class="button button_mini">КУПИТЬ</button>
                             </div>
                         </div>
                     </div>
@@ -275,7 +275,7 @@
                                 <div class="catalog-card__price-new">6 641 руб.</div>
                             </div>
                             <div class="catalog-card__btn">
-                                <button class="button button_mini">КУПИТЬ</button>
+                                <button data-modal="order" class="button button_mini">КУПИТЬ</button>
                             </div>
                         </div>
                     </div>
@@ -302,7 +302,7 @@
                                 <div class="catalog-card__price-new">7 021 руб.</div>
                             </div>
                             <div class="catalog-card__btn">
-                                <button class="button button_mini">КУПИТЬ</button>
+                                <button data-modal="order" class="button button_mini">КУПИТЬ</button>
                             </div>
                         </div>
                     </div>
@@ -331,7 +331,7 @@
                                 <div class="catalog-card__price-new">4 500 руб.</div>
                             </div>
                             <div class="catalog-card__btn">
-                                <button class="button button_mini">КУПИТЬ</button>
+                                <button data-modal="order" class="button button_mini">КУПИТЬ</button>
                             </div>
                         </div>
                     </div>
@@ -358,7 +358,7 @@
                                 <div class="catalog-card__price-new">6 641 руб.</div>
                             </div>
                             <div class="catalog-card__btn">
-                                <button class="button button_mini">КУПИТЬ</button>
+                                <button data-modal="order" class="button button_mini">КУПИТЬ</button>
                             </div>
                         </div>
                     </div>
@@ -387,7 +387,7 @@
                                 <div class="catalog-card__price-new">6 641 руб.</div>
                             </div>
                             <div class="catalog-card__btn">
-                                <button class="button button_mini">КУПИТЬ</button>
+                                <button data-modal="order" class="button button_mini">КУПИТЬ</button>
                             </div>
                         </div>
                     </div>
@@ -450,7 +450,37 @@
         </div>
     </footer>
 
-
+    <section class="overlay">
+        <div class="modal" id="consultation">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Просто заполните форму заявки</div>
+            <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
+            <form action="#" class="feed-form feed-form_mt25">
+                <input name="name" required placeholder="Ваше имя" type="text">
+                <input name="name" required placeholder="Ваш телефон" type="number">
+                <input name="name" required placeholder="Ваш email" type="email">
+                <button class="button button_main button_form">заказать кОНСУЛЬТАЦИЮ</button>
+            </form>
+        </div>
+        <div class="modal" id="order">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Ваш заказ:</div>
+            <div class="modal__descr">Пульсометр Polar FT1</div>
+            <form action="#" class="feed-form feed-form_mt25">
+                <input name="name" required placeholder="Ваше имя" type="text">
+                <input name="name" required placeholder="Ваш телефон" type="number">
+                <input name="name" required placeholder="Ваш email" type="email">
+                <button class="button button_main button_form">купить</button>
+            </form>
+        </div>
+        <div class="modal modal_mini" id="thanks">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Спасибо за вашу заявку!</div>
+            <div class="modal__descr">Наш менеджер свяжется с вами 
+                в ближайшее время!</div>
+        </div>
+        
+    </section>
 
 
 
@@ -462,6 +492,7 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="script/slick.min.js"></script>
     <script src="script/tabs.js"></script>
+    <script src="script/modal.js"></script>
     <script src="script/script.js"></script>
 </body>
 </html>
