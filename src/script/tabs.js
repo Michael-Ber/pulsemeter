@@ -22,7 +22,7 @@ function addActive(tagName, className) {
 function toggleSlide(arrName, [className1, className2] ) {
     arrName.forEach((link, index) => {
         link.addEventListener('click', (e) => {
-            e.preventDefault();
+            e.preventDefault(); //отменяет стандартное поведение браузера, в данном случае нет обновления страницы при нажатии на ссылку
             className1[index].classList.toggle('catalog-card__content_active');
             className2[index].classList.toggle('catalog-card-detail_active');
         });

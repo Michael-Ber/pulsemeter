@@ -61,6 +61,14 @@
             padding: 0 20px;
         }
     }
+    .clients {
+        &__wrapper {
+            padding: 0 20px;
+        }
+        &__descr {
+            font-size: 14px;
+        }
+    }
         
 }
 @media (max-width: 767px) {
@@ -124,6 +132,14 @@
         }
         &__img {
             width: 380px;
+        }
+    }
+    .clients {
+        &__descr {
+            font-size: 12px;
+        }
+        &__content {
+            margin-left: 0;
         }
     }
     
@@ -216,12 +232,30 @@
         }
     }
     .catalog {
+        padding-bottom: 40px;
         &__tabs {
             flex-direction: column;
             margin-top: 34px;
         }
         &__tab {
             margin-bottom: 10px;
+        }
+    }
+    .clients {
+        &__item {
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+        &__name {
+            text-align: center;
+            padding-right: 20px;
+        }
+        &__img {
+            margin-bottom: 20px;
+        }
+        &__wrapper {
+            margin-top: 30px;
         }
     }
 }
