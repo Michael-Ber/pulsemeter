@@ -11,7 +11,7 @@
         left: 50%;
         transform: translate(-50%, -50%);
         width: 380px;
-        height: 400px;
+        min-height: 400px;
         background-color: #f2f2f2;
         padding: 40px;
         &__subtitle {
@@ -40,6 +40,13 @@
             line-height: 18px;
             color: $main-color;
             cursor: pointer;
+        }
+        .error {
+            border: 1px solid red;
+            margin-bottom: 10px;
+        }
+        label.error {
+            border: none;
         }
     }
 
