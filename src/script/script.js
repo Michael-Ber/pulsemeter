@@ -50,7 +50,6 @@ $(document).ready(function(){
         speed: 1000,
         mobileFirst: true,
 	});
-	
 	function validateForm(form) {
 		$(form).validate({
 			rules: {
@@ -87,4 +86,21 @@ $(document).ready(function(){
 	validateForm('#order form');
 
 	$('input[name=tel]').mask("+7 (999) 999-9999",{placeholder:"_"});
+	console.log('dfdsf');
+	$('form').submit(function(e) {
+		e.preventDefault();
+		console.log('here');
+		$.ajax({
+			type: "POST",
+			url: "mailer/smart.php",
+			data: $(this).serialize()
+		}).done(function() {
+			$(this).find("input").val("");
+			$('#consultation, #order').fadeOut();
+			$('.overlay, #thanks').fadeIn('slow');
+			$('form').trigger('reset');
+			
+		});
+		return false;
+	});
 });
