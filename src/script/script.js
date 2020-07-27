@@ -86,10 +86,8 @@ $(document).ready(function(){
 	validateForm('#order form');
 
 	$('input[name=tel]').mask("+7 (999) 999-9999",{placeholder:"_"});
-	console.log('dfdsf');
 	$('form').submit(function(e) {
 		e.preventDefault();
-		console.log('here');
 		$.ajax({
 			type: "POST",
 			url: "mailer/smart.php",
@@ -103,4 +101,18 @@ $(document).ready(function(){
 		});
 		return false;
 	});
+
+	$(window).scroll(function() {
+		if($(this).scrollTop() > 1900) {
+			$('.scrollUp').fadeIn();
+		} else {
+			$('.scrollUp').fadeOut();
+		}
+	});
+
+	$("a[href^='#']").click(function(){
+		const _href = $(this).attr("href");
+		$("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+		return false;
+});
 });
